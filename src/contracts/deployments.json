@@ -1,0 +1,14 @@
+{
+  "network": "sepolia",
+  "timestamp": "2024-01-20T10:30:00.000Z",
+  "contracts": {
+    "ResumeVerifier": {
+      "address": "0x742d35Cc6634C0532925a3b8D4C9db96C4b5Da5A",
+      "deployer": "0x8ba1f109551bD432803012645Hac136c30C6756M"
+    },
+    "ScamDomainRegistry": {
+      "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+      "deployer": "0x8ba1f109551bD432803012645Hac136c30C6756M"
+    }
+  }
+}
