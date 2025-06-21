@@ -10,7 +10,7 @@ Built using [Bolt.new](https://bolt.new) with **React + Vite**, the app emphasiz
 
 ## 🌐 Live Demo
 
-🔗 [https://yourproject.netlify.app](https://yourproject.netlify.app)
+🔗 [https://yourproject.netlify.app](https://boltprojectvault.netlify.app/landing)
 
 ---
 
