@@ -20,8 +20,8 @@ import {
 
 const LandingPage: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+   const [showVideo, setShowVideo] = useState(false); // ✅ ADD THIS HERE
   const navigate = useNavigate();
-
   const handleGetStarted = () => {
     navigate('/auth');
   };
@@ -189,12 +189,26 @@ const LandingPage: React.FC = () => {
                 <span>Get Started</span>
                 <ArrowRight className="w-5 h-5" />
               </button>
-              <button 
-                onClick={handleGetStarted}
-                className="border border-gray-600 px-8 py-4 rounded-lg font-semibold text-white hover:border-green-400 hover:text-green-400 transition-all duration-200"
-              >
-                Watch Demo
-              </button>
+             <button 
+  onClick={() => setShowVideo(true)} // ✅ show video on click
+  className="border border-gray-600 px-8 py-4 rounded-lg font-semibold text-white hover:border-green-400 hover:text-green-400 transition-all duration-200"
+>
+  Watch Demo
+</button>
+
+{showVideo && (
+  <div className="mt-8 max-w-4xl mx-auto w-full">
+    <div className="aspect-w-16 aspect-h-9">
+      <iframe
+        className="rounded-lg w-full h-[400px] sm:h-[500px]"
+        src="https://www.youtube.com/embed/Y1Oo4kdkT8I?si=_Nypz1yemoXV8-Nn"
+        title="SentriVault Demo"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+  </div>
+)}
             </div>
           </div>
 
